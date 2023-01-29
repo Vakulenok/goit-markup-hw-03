@@ -45,10 +45,15 @@ ul {
 
 /*  HEADER section*/
 
+header {
+  border-bottom: 1px solid var(--footer-color);
+}
+
 .nav-header {
   align-items: center;
   display: flex;
-  padding: 36px 141px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid var(--footer-color);
 }
 /*  спросить у ментора  */
@@ -92,22 +97,23 @@ ul {
 /* PORTFOLIO section*/
 
 .portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .portfolist {
   background: var(--main-title-color);
-  border: 1px solid #e7e9fc;
   margin-bottom: 48px;
 }
 
+.portfolist:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .portfolio-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   padding: 0px 16px;
   gap: 8px;
-  box-sizing: border-box;
+  border: 1px solid var(--footer-color);
 }
 
 .portfolio {
@@ -136,7 +142,6 @@ ul {
   display: flex;
   justify-content: center;
   padding: 188px 0;
-  margin-bottom: 120px;
 }
 
 .main-section-container {
@@ -161,7 +166,6 @@ ul {
 }
 
 .link {
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -229,7 +233,7 @@ ul {
 
 /* BENEFITS-section */
 .benefits-section {
-  margin-bottom: 120px;
+  padding: 120px 0;
 }
 
 .benefits-title {
@@ -278,11 +282,14 @@ ul {
 }
 
 /* What are we doing */
+.our-work-section {
+  padding-bottom: 120px;
+}
+
 .our-works {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 120px;
 }
 
 .works-list {
@@ -294,14 +301,14 @@ ul {
 /* TEAM-section */
 .team-section {
   background-color: var(--btn-bg-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .team-list {
@@ -340,6 +347,7 @@ ul {
 }
 
 .image-title {
+  margin-bottom: 8px;
   font-size: 20px;
   line-height: 1.2;
   color: var(--navy-color);
@@ -359,13 +367,10 @@ ul {
 }
 /* FOOTER-section */
 
-.footer-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 footer {
   background-color: var(--navy-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
